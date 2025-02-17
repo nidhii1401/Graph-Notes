@@ -7,5 +7,10 @@ void shortestDistance(vector<vector<int>>& mat) {
                 }
             }
         }
+
+        // To detect negative cycle in a graph using Floyd Warshall-- check for diagonal elements
+        for(int i=0; i<n; i++){
+               if(mat[i][i] < 0) cout << "Negative Cycle Present" << endl;
+        }
  
 }
