@@ -46,8 +46,7 @@ public:
 
         // 4. Perform dfs to store Euler's Path
         vector<int> EulerPath;
-        vector<bool> visited(maxNode+1, false);
-
+        
         dfs(startNode,adj, EulerPath);
         reverse(begin(EulerPath), end(EulerPath));
 
